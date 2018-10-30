@@ -10,11 +10,11 @@ import { GithubComponent } from './github/github.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GithubDetailsComponent } from './github-details/github-details.component';
 
-// const routes: Routes = [
-//   {path: 'find', component: GithubDetailsComponent}                 ,
-//   {path: 'search', component: GithubComponent},
-//   {path: '', redirectTo: '/search', pathMatch: 'full'},
-// ];
+const routes: Routes = [
+  {path: 'find', component: GithubDetailsComponent}                 ,
+  {path: 'search', component: GithubComponent},
+  {path: '', redirectTo: '/search', pathMatch: 'full'},
+];
 
 @NgModule({
   declarations: [
