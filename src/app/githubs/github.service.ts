@@ -19,18 +19,18 @@ export class GithubService {
     this.user = new User('');
     this.repo$ = new Repo('');
   }
-  
-  // getUser(){
-  //   interface ApiResponse{
-  //     login: string;
-  //   }
-  //
-  //   const promise = new Promise(((resolve, reject) => {
-  //     this.http.get<ApiResponse>('https://api.github.com/users/hamida-mstafa?access_token=' +'5178c6b3e395a8e01a6b6858989a559af75b4134')
-  //     .toPromise().then(response => {
-  //       this.user.username = response.login;
-  //       console.log(response)
-  //     },
+
+  getUser(){
+    interface ApiResponse{
+      login: string;
+    }
+
+    const promise = new Promise(((resolve, reject) => {
+      this.http.get<ApiResponse>('https://api.github.com/users/hamida-mstafa?access_token=' +'5178c6b3e395a8e01a6b6858989a559af75b4134')
+      .toPromise().then(response => {
+        this.user.username = response.login;
+        console.log(response)
+      },
   //     error => {
   //
   //       reject(error);
