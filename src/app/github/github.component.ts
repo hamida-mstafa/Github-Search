@@ -1,18 +1,18 @@
-// import { Component, OnInit } from '@angular/core';
-// import {HttpClient} from '@angular/common/http';
-// import {GithubService} from '../githubs/github.service';
-// // import 'rxjs/add/operator/map';
-//
-// @Component({
-//   selector: 'app-github',
-//   templateUrl: './github.component.html',
-//   styleUrls: ['./github.component.css'],
-//   providers:[GithubService],
-// })
-// export class GithubComponent implements OnInit {
-//   user;
-//   repo;
-//
+import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {GithubService} from '../githubs/github.service';
+// import 'rxjs/add/operator/map';
+
+@Component({
+  selector: 'app-github',
+  templateUrl: './github.component.html',
+  styleUrls: ['./github.component.css'],
+  providers:[GithubService],
+})
+export class GithubComponent implements OnInit {
+  user;
+  repo;
+
 //   constructor(public service:GithubService, private http:HttpClient) { }
 //
 //   ngOnInit() {
