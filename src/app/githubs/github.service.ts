@@ -15,11 +15,11 @@ export class GithubService {
 
   private username:string;
 
-  // constructor(private http: HttpClient) {
-  //   this.user = new User('');
-  //   this.repo$ = new Repo('');
-  // }
-  //
+  constructor(private http: HttpClient) {
+    this.user = new User('');
+    this.repo$ = new Repo('');
+  }
+  
   // getUser(){
   //   interface ApiResponse{
   //     login: string;
