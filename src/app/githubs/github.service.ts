@@ -36,13 +36,13 @@ export class GithubService {
         reject(error);
       });
     } ));
-  //   return promise;
-  //
-  // }
-  // getUserRepos(){
-  // this.http.get('https://api.github.com/users/hamida-mstafa/repos').subscribe(data=>{
-  //   this.repo$ = data
-  // })
+    return promise;
+
+  }
+  getUserRepos(){
+  this.http.get('https://api.github.com/users/hamida-mstafa/repos').subscribe(data=>{
+    this.repo$ = data
+  })
   // console.log(data)
   }
 }
