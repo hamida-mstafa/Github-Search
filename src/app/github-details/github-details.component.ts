@@ -12,17 +12,17 @@ import {GithubService} from '../githubs/github.service';
 export class GithubDetailsComponent implements OnInit {
   result$:any;
   show$;
-  // constructor(public service: GithubService, private http: HttpClient ) {}
-  // search(input){
-  //   this.http.get('https://api.github.com/users/' + input.value).subscribe( data => {
-  //     this.result$ = data;
-  //     console.log(data);
-  //   });
-  //   this.http.get('https://api.github.com/users/' + input.value + '/repos') .subscribe(data => {
-  //    this.show$ = data;
-  //    console.log(data);
-  //  });
-  // }
+   constructor(public service: GithubService, private http: HttpClient ) {}
+   search(input){
+     this.http.get('https://api.github.com/users/' + input.value).subscribe( data => {
+       this.result$ = data;
+       console.log(data);
+     });
+     this.http.get('https://api.github.com/users/' + input.value + '/repos') .subscribe(data => {
+      this.show$ = data;
+      console.log(data);
+    });
+   }
 
   ngOnInit(){
   }
