@@ -31,11 +31,11 @@ export class GithubService {
         this.user.username = response.login;
         console.log(response)
       },
-  //     error => {
-  //
-  //       reject(error);
-  //     });
-  //   } ));
+      error => {
+
+        reject(error);
+      });
+    } ));
   //   return promise;
   //
   // }
