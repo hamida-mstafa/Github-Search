@@ -14,19 +14,19 @@ export class GithubComponent implements OnInit {
   repo;
 
   constructor(public service:GithubService, private http:HttpClient) { }
-//
-//   ngOnInit() {
-//     this.http.get('https://api.github.com/users/hamida-mstafa?access_token='+ '5178c6b3e395a8e01a6b6858989a559af75b4134').subscribe(data=>{
-//     this.user = data
-//     console.log(data)
-//
-//   })
-//   this.http.get('https://api.github.com/users/hamida-mstafa/repos?access_token=' + '5178c6b3e395a8e01a6b6858989a559af75b4134').subscribe(repo=>{
-//   this.repo = repo
-//   console.log(repo)
-// })
-//
-//
-//     }
-//
-//   }
+
+  ngOnInit() {
+    this.http.get('https://api.github.com/users/hamida-mstafa?access_token='+ '5178c6b3e395a8e01a6b6858989a559af75b4134').subscribe(data=>{
+    this.user = data
+    console.log(data)
+
+  })
+  this.http.get('https://api.github.com/users/hamida-mstafa/repos?access_token=' + '5178c6b3e395a8e01a6b6858989a559af75b4134').subscribe(repo=>{
+  this.repo = repo
+  console.log(repo)
+})
+
+
+    }
+
+  }
