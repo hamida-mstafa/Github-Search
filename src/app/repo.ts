@@ -1,3 +1,3 @@
-// export class Repo {
-//   constructor(public rep:string){}
-// }
+export class Repo {
+  constructor(public rep:string){}
+}
